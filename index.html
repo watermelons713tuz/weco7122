@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Liquid Glass Инструкции</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>Инструкции Liquid Glass</header>
+  <main id="instructions"></main>
+
+  <script>
+    // Загружаем инструкции из файла data.json
+    fetch('data.json')
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById('instructions');
+        data.forEach(item => {
+          const div = document.createElement('div');
+          div.className = 'card';
+          div.innerHTML = `
+            <h3>${item.title}</h3>
+            <p>${item.text}</p>
+            ${item.link ? `<button onclick="window.open('${item.link}', '_blank')">Подробнее</button>` : ''}
+          `;
+          container.appendChild(div);
+        });
+      })
+      .catch(err => {
+        console.error('Ошибка загрузки инструкций:', err);
+      });
+  </script>
+</body>
+</html>

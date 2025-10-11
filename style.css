@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: -apple-system, "SF Pro Display", Helvetica, Arial, sans-serif;
+  background: linear-gradient(145deg, rgba(240,240,255,0.4), rgba(200,200,255,0.2));
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+header {
+  margin-top: 30px;
+  font-size: 1.8em;
+  font-weight: 600;
+  background: linear-gradient(90deg, #a0b9ff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card {
+  width: 90%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  padding: 20px;
+  margin: 15px 0;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+  color: #cce0ff;
+}
+
+.card p {
+  color: #e5e9ff;
+  font-size: 0.95em;
+}
+
+button {
+  margin-top: 10px;
+  background: rgba(255,255,255,0.15);
+  border: none;
+  border-radius: 16px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 0.95em;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: rgba(255,255,255,0.3);
+}
