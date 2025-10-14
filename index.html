@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Викторина — Material 3 Expressive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="app-header glass">
+      <h1 class="title">Викторина</h1>
+      <p class="subtitle">Материал 3 Expressive • Адаптивный • Liquid Glass</p>
+    </header>
+
+    <section id="quiz-container" class="container">
+      <!-- Questions will be injected here -->
+    </section>
+
+    <div class="controls">
+      <button id="prevBtn" class="btn glass" hidden>Назад</button>
+      <button id="nextBtn" class="btn primary glass">Далее</button>
+      <button id="submitBtn" class="btn primary glass" style="display:none">Завершить</button>
+    </div>
+
+    <div id="resultModal" class="modal" hidden>
+      <div class="modal-card glass">
+        <h2 id="resultTitle">Результат</h2>
+        <p id="resultSummary"></p>
+        <div id="resultDetails"></div>
+        <button id="restartBtn" class="btn">Пройти снова</button>
+      </div>
+    </div>
+
+    <footer class="app-footer">
+      <small>Сделано с ❤️ — Material 3 Expressive & Liquid Glass</small>
+    </footer>
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>

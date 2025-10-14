@@ -1,0 +1,65 @@
+[
+  {
+    "question": "Какие из этих языков являются языками программирования?",
+    "options": [
+      "Python",
+      "HTML",
+      "CSS",
+      "C++"
+    ],
+    "correct": [
+      0,
+      3
+    ]
+  },
+  {
+    "question": "Столица Франции?",
+    "options": [
+      "Лион",
+      "Марсель",
+      "Париж",
+      "Тулуза"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "question": "Выберите фрукты из списка:",
+    "options": [
+      "Морковь",
+      "Яблоко",
+      "Банан",
+      "Картофель"
+    ],
+    "correct": [
+      1,
+      2
+    ]
+  },
+  {
+    "question": "HTML означает:",
+    "options": [
+      "HyperText Markup Language",
+      "HighText Machine Language",
+      "Hyperlink Markup Language",
+      "Home Tool Markup Language"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "Какие числа простые?",
+    "options": [
+      "2",
+      "4",
+      "9",
+      "13"
+    ],
+    "correct": [
+      0,
+      3
+    ]
+  }
+]
