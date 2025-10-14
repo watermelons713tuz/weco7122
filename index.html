@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Викторина Material 3 Expressive</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@material/web@1.0.0/all.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 class="expressive-title">🚀 Супер-Викторина</h1>
+        <p class="tagline">Проверьте свои знания в стиле Material 3 Expressive!</p>
+
+        <div id="quiz-form">
+            <div id="questions-area"></div>
+            
+            <div class="fab-wrapper">
+                <md-fab id="submit-quiz" variant="extended">
+                    <md-icon slot="icon">check</md-icon>
+                    Завершить Викторину
+                </md-fab>
+            </div>
+        </div>
+
+        <div id="results-area" class="glass-effect hidden">
+            <h2 class="expressive-subtitle">Ваши Результаты</h2>
+            <div id="score-summary"></div>
+            <md-divider></md-divider>
+            <div id="detailed-results"></div>
+            <md-filled-button id="start-new-quiz">Начать заново</md-filled-button>
+        </div>
+    </div>
+</body>
+</html>
