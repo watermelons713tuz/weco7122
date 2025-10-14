@@ -13,22 +13,25 @@
       <p class="subtitle">Материал 3 Expressive • Адаптивный • Liquid Glass</p>
     </header>
 
-    <section id="quiz-container" class="container">
+    <section id="quiz-container" class="container" tabindex="0" aria-live="polite">
       <!-- Questions will be injected here -->
     </section>
 
-    <div class="controls">
-      <button id="prevBtn" class="btn glass" hidden>Назад</button>
-      <button id="nextBtn" class="btn primary glass">Далее</button>
-      <button id="submitBtn" class="btn primary glass" style="display:none">Завершить</button>
+    <div class="controls" role="toolbar" aria-label="Навигация викторины">
+      <button id="prevBtn" class="btn glass" aria-label="Назад" hidden>Назад</button>
+      <button id="nextBtn" class="btn primary glass" aria-label="Далее">Далее</button>
+      <button id="submitBtn" class="btn primary glass" style="display:none" aria-label="Завершить">Завершить</button>
     </div>
 
-    <div id="resultModal" class="modal" hidden>
+    <div id="resultModal" class="modal" hidden aria-hidden="true">
       <div class="modal-card glass">
         <h2 id="resultTitle">Результат</h2>
         <p id="resultSummary"></p>
-        <div id="resultDetails"></div>
-        <button id="restartBtn" class="btn">Пройти снова</button>
+        <div id="resultDetails" class="result-list"></div>
+        <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:12px;">
+          <button id="closeResultBtn" class="btn">Закрыть</button>
+          <button id="restartBtn" class="btn primary">Пройти снова</button>
+        </div>
       </div>
     </div>
 
@@ -37,6 +40,6 @@
     </footer>
   </main>
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </body>
 </html>
